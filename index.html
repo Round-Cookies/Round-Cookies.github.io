@@ -1,0 +1,106 @@
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Round-Cookies的个人网页">
+		<meta name="keywords" content="Round-Cookies">
+		<meta name="author" content="Round-Cookies, Cookies-201013@126.com">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<meta name="google" value="notranslate">
+        <!--css库导入-->
+		<link rel="stylesheet" href="css/index.css?v=2335"></link>
+		<link rel="stylesheet" href="css/nav.css"></link>
+		<link rel="stylesheet" href="css/animation.css"></link>
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,100,700%7Dosis:400,500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+		<title>Round-Cookes's Personal Blog</title>
+    </head>
+    <body>
+		<script src="js/move-effect.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/sidebar-effect.js"></script>
+		<script src="js/animation-effect.js"></script>
+		<script src="js/background.js"></script>
+		<script src="js/waves.js"></script>
+        <div class="background-left" id="bg"></div>
+        <div class="backgroundcover-hide" id="bgcover"></div>
+		<nav>
+			<div class="menu" onclick="slide()">
+				<div class="capsule"></div>
+				<div class="capsule"></div>
+				<div class="capsule"></div>
+			</div>
+			<div class="nav-hide" id="nav">
+				<div class="nav-title">Round_Cookies's Blog</div>
+				<ul class="nav-block">
+					<li><a onclick="Pagemove(800)">个人介绍</a></li>
+					<li><a onclick="Pagemove(1300)">作品展示</a></li>
+					<li><a href="blog.html">博客页面</a></li>
+				</ul>
+			</div>
+			<div id="sidebar" class="side-bar-hide">
+				<div class="side-title">Round_Cookies's Blog</div>
+				<ul class="side-block">
+					<li><a onclick="Pagemove(800)">个人介绍</a></li>
+					<li><a onclick="Pagemove(1300)">作品展示</a></li>
+					<li><a href="blog.html">博客页面</a></li>
+				</ul>
+				<div class="division-line"></div>
+			</div>
+		</nav>
+		<div class="main">
+			<div class="section">
+				<h2 class="section-title">个人介绍|Intro</h2>
+				<p class="section-text" id="intro-text">InnovaCreation建筑师 UCG联建成员 在校学生 Web相关开发</p>
+				<p class="section-text" id="intro-text">我是一个学生,学习html/css/js/java/sql,喜欢钻研,坚持创新.</br>我来自于上海,希望成为一名优秀的Developer,并且为实现梦想而努力着.</br>我喜欢物理,我喜欢带着科学精神看待一切事物</p>
+			</div>
+			<div class="section" id="gallery">
+				<h2 class="section-title">作品展示|Gallery</h2>
+				<div class="card-box">
+					<div class="block-trans" id="block0">
+						<div class="card" id="card0" onclick="waves(0,event)"></div>
+						<div class="card-des">NewNorth-Seaside</div>
+						<div class="card-subdes">2016/7 minecraft</div>
+					</div>
+					<div class="block-trans" id="block1">
+						<div class="card" id="card1" onclick="waves(1,event)"></div>
+						<div class="card-des">Project-Fade</div>
+						<div class="card-subdes">2017/10 minecraft</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="skill">
+				<h2 class="section-title">技能树|Skill</h2>
+				<div class="skill-box">
+					<div class="skill">Html</div>
+					<div class="skillbar"><div class="bar-left" id="htmlbar"></div></div>
+					<div class="skill">CSS</div>
+					<div class="skillbar"><div class="bar-left" id="cssbar"></div></div>
+					<div class="skill">JS</div>
+					<div class="skillbar"><div class="bar-left" id="jsbar"></div></div>
+				</div>
+			</div>
+			<div class="section">
+					<h2 class="section-title">关于|About</h2>
+					<p class="section-text">联系方式:Round_Cookies@outlook.com</br>团队官网:Innovacreation.studio</p>
+					<p class="section-text">愿所有追逐梦想的人得到自己想要的东西.</p>
+					<i class="ion-ios-arrow-up" onclick="Pagemove(800)"></i>
+			</div>
+			<div class="end">
+				<h3 class="ending">Copyright © 2016-2017 Round Cookies</h3>
+			</div>
+		</div>
+		<div class="start-show" id="start">
+			<h2 class="title">Round Cookies</h2>
+			<h2 class="subtitle">A double-end developer & designer</h2>
+			<div class="divider"></div>
+			<div class="iconbox">
+				<a><i class="ion-social-twitter"></i>
+				<a href="https://github.com/Round-Cookies"><i class="ion-social-github"></i></a>
+				<a><i class="ion-social-facebook"></i></a>
+			</div>
+			<i class="ion-ios-arrow-down" onclick="Pagemove(800)"></i>
+		</div>
+		<div id="cover" class="cover" onclick="clearslide()"></div>
+	</body>
+</html>
