@@ -4,8 +4,8 @@ function Pagemove(i)
     if($or == true)
     {
         $or = false
-        $velocity = 1.5;//初速度，单位为像素/10毫秒
-        $af = 11.5;//加速度系数
+        $velocity = 1.1;//初速度，单位为像素/10毫秒
+        $af = 7.5;//加速度系数
         /*↑可设置变量*/
         i = i * document.body.clientHeight/1080;
         $x=0;
