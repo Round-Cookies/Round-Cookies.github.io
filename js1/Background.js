@@ -14,7 +14,7 @@ function BackgroundChange()
 function Settimer()
 {
     document.getElementById("bg").className= "background";
-    document.getElementById("bg").style.background = 'url("../img/Background' + num + '.jpg") no-repeat center';
+    document.getElementById("bg").style.background = 'url("img1/Background' + num + '.jpg") no-repeat center';
     document.getElementById("bg").style.backgroundSize = 'cover';
     var t=setTimeout("BackgroundChange()",5000);
 }
