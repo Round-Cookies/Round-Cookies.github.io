@@ -66,23 +66,17 @@ h2
 }
 
 /*======================================================================================background======================================================================================*/
-.background-left
+.background
 {
     background: url(/img/IMG5.jpg) no-repeat center;
+    background-size: cover;
     float: right;
     position: fixed;
     top: 10%;
     height: 100%;
     width: 100%;
 }
-.background-right
-{
-    background: url(/img/IMG5.jpg) no-repeat center;
-    float: right;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-}
+
 .backgroundcover-hide
 {
     float: right;
@@ -259,8 +253,13 @@ h2
 
 .start-main-title-card-box
 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     position: absolute;
     top: 55%;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 .start-main-title-card
@@ -273,6 +272,8 @@ h2
     font-weight: 100;
     color: #222;
     font-size: 4.5vh;
+    word-wrap: break-word; 
+    word-break: normal;
 }
 
 .start-secondary-title-card
@@ -583,6 +584,29 @@ h2
 
 @media (max-width: 1024px)
 {
+    .introduction
+    {
+        display: none;
+    }
+    .bright-width-limiter
+    {
+        transition: 0.4s;
+        background-color: #fff;
+        margin-bottom: -5px;
+    }
+
+    .dark-width-limiter
+    {
+        transition: 0.4s;
+        background-color: #222;
+        margin-bottom: -5px;
+    }
+
+    .start-main-title-card
+    {
+        font-size: 3vh;
+    }
+
     .backgroundcover-hide
     {
         display: none;
