@@ -65,10 +65,11 @@ h2
     font-size: 50px;
 }
 
+
 /*======================================================================================background======================================================================================*/
 .background
 {
-    background: url(/img/IMG5.jpg) no-repeat center;
+    background: url(https://i.loli.net/2019/07/28/5d3dc4c45545e49672.jpg) no-repeat center;
     background-size: cover;
     float: right;
     position: fixed;
@@ -236,6 +237,7 @@ h2
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 .start-debate-title-card
@@ -394,7 +396,7 @@ h2
 
 .exhibition-card-picture-1
 {
-    background: url(/img/EIMG3.jpg);
+    background: url(https://i.loli.net/2019/07/28/5d3dc5b02ff9642277.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -404,7 +406,7 @@ h2
 
 .exhibition-card-picture-2
 {
-    background: url(/img/EIMG2.jpg);
+    background: url(https://i.loli.net/2019/07/28/5d3dc5afe37f497714.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -414,7 +416,7 @@ h2
 
 .exhibition-card-s-picture-1
 {
-    background: url(/img/ESIMG-1.jpg);
+    background: url(https://i.loli.net/2019/07/28/5d3dc4c344e7a86108.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -424,7 +426,7 @@ h2
 
 .exhibition-card-s-picture-2
 {
-    background: url(/img/ESIMG-2.jpg);
+    background: url(https://i.loli.net/2019/07/28/5d3dc4c36fb5b28482.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -434,7 +436,7 @@ h2
 
 .exhibition-card-s-picture-3
 {
-    background: url(/img/ESIMG-3.jpg);
+    background: url(https://i.loli.net/2019/07/28/5d3dc4c3a4c0387827.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
