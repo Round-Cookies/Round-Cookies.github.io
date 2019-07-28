@@ -1,27 +1,25 @@
 <html>
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="description" content="Round-Cookies的个人网页">
-		<meta name="keywords" content="Round-Cookies">
+		<meta name="description" content="七中华语辩论社官网">
+		<meta name="keywords" content="七中华语辩论社官网">
 		<meta name="author" content="Round-Cookies, Cookies-201013@126.com">
 		<meta http-equiv="Cache-Control" content="no-siteapp">
 		<meta name="google" value="notranslate">
         <!--css库导入-->
-		<link rel="stylesheet" href="css/index.css?v=2335"></link>
 		<link rel="stylesheet" href="css/nav.css"></link>
+		<link rel="stylesheet" href="css/index.css"></link>
 		<link rel="stylesheet" href="css/animation.css"></link>
 		<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,100,700%7Dosis:400,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300&amp;subset=latin-ext" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-		<title>Round-Cookes's Personal Blog</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900|Noto+Serif+SC:200,300,400,500,600,700,900&display=swap" rel="stylesheet"> 
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<title>七宝中学华语辩论社</title>
     </head>
     <body>
-		<script src="js/move-effect.js"></script>
+		<script src="js/moveEffect.js"></script>
+		<script src="js/navEffect.js"></script>
 		<script src="js/smoothscroll.js"></script>
-		<script src="js/sidebar-effect.js"></script>
-		<script src="js/animation-effect.js"></script>
-		<script src="js/background.js"></script>
-		<script src="js/waves.js"></script>
         <div class="background-left" id="bg"></div>
         <div class="backgroundcover-hide" id="bgcover"></div>
 		<nav>
@@ -30,77 +28,290 @@
 				<div class="capsule"></div>
 				<div class="capsule"></div>
 			</div>
-			<div class="nav-hide" id="nav">
-				<div class="nav-title">Round_Cookies's Blog</div>
-				<ul class="nav-block">
-					<li><a onclick="Pagemove(800)">个人介绍</a></li>
-					<li><a onclick="Pagemove(1300)">作品展示</a></li>
-					<li><a href="blog.html">博客页面</a></li>
-				</ul>
+			<div class="nav-bright" id="nav">
+				<div class="nav-leftBlock">
+					<div class="nav-title" id="nav-title">上&nbsp海&nbsp市&nbsp七&nbsp宝&nbsp中&nbsp学&nbsp华&nbsp语&nbsp辩&nbsp论&nbsp社</div>
+				</div>
+				<div class="nav-rightBlock">
+					<li><a onclick="Pagemove(500)">&nbsp&nbsp社&nbsp团&nbsp介&nbsp绍&nbsp&nbsp</a></li>
+					<li><a onclick="Pagemove(1700)">&nbsp&nbsp社&nbsp团&nbsp展&nbsp示&nbsp&nbsp</a></li>
+					<li><a onclick="Pagemove(3200)">&nbsp&nbsp社&nbsp团&nbsp生&nbsp活&nbsp&nbsp</a></li>
+					<li><a onclick="Pagemove(4220)">&nbsp&nbsp加&nbsp入&nbsp我&nbsp们&nbsp&nbsp</a></li>
+				</div>
 			</div>
 			<div id="sidebar" class="side-bar-hide">
-				<div class="side-title">Round_Cookies's Blog</div>
-				<ul class="side-block">
-					<li><a onclick="Pagemove(800)">个人介绍</a></li>
-					<li><a onclick="Pagemove(1300)">作品展示</a></li>
-					<li><a href="blog.html">博客页面</a></li>
-				</ul>
-				<div class="division-line"></div>
+				<li class="side-bar-content-li"><a onclick="Pagemove(500)" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp介&nbsp绍&nbsp&nbsp</a></li>
+				<li class="side-bar-content-li"><a onclick="Pagemove(1700)" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp展&nbsp示&nbsp&nbsp</a></li>
+				<li class="side-bar-content-li"><a onclick="Pagemove(3200)" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp生&nbsp活&nbsp&nbsp</a></li>
+				<li class="side-bar-content-li"><a onclick="Pagemove(4220)" class="side-bar-content-a">&nbsp&nbsp加&nbsp入&nbsp我&nbsp们&nbsp&nbsp</a></li>
 			</div>
 		</nav>
-		<div class="main">
-			<div class="section">
-				<h2 class="section-title">个人介绍|Intro</h2>
-				<p class="section-text" id="intro-text">InnovaCreation建筑师 UCG联建成员 在校学生 Web相关开发</p>
-				<p class="section-text" id="intro-text">我是一个学生,学习html/css/js/java/sql,喜欢钻研,坚持创新.</br>我来自于上海,希望成为一名优秀的Developer,并且为实现梦想而努力着.</br>我喜欢物理,我喜欢带着科学精神看待一切事物</p>
-			</div>
-			<div class="section" id="gallery">
-				<h2 class="section-title">作品展示|Gallery</h2>
-				<div class="card-box">
-					<div class="block-trans" id="block0">
-						<div class="card" id="card0" onclick="waves(0,event)"></div>
-						<div class="card-des">NewNorth-Seaside</div>
-						<div class="card-subdes">2016/7 minecraft</div>
+		<div class="main-content">
+			<div class="bright-width-limiter" id="start">
+				<div class="start">
+					<div class="start-debate-title-card-box">
+					<div class="start-debate-title-card" id="1">人工智能是否可取代法官审判</div>
+					<div class="start-debate-title-card" id="2">安乐死是否应该合法化</div>
+					<div class="start-debate-title-card" id="3">学生近视防控应该家庭主导</div>
+					<div class="start-debate-title-card" id="4">让是不是一种美德</div>
+					<div class="start-debate-title-card" id="5">不如己者跟适合做朋友</div>
+					<div class="start-debate-title-card" id="6">人不轻狂亦少年</div>
+					<div class="start-debate-title-card" id="7">白一帆是不是辩论社的靓仔</div>
+					<div class="start-debate-title-card" id="8">人生贵在抒胸臆</div>
+					<div class="start-debate-title-card" id="9">平凡是弱者的借口</div>
+					<div class="start-debate-title-card" id="10">人工智能是否可取代法官审判</div>
+					<div class="start-debate-title-card" id="11">安乐死是否应该合法化</div>
+					<div class="start-debate-title-card" id="12">学生近视防控应该家庭主导</div>
+					<div class="start-debate-title-card" id="13">让是不是一种美德</div>
+					<div class="start-debate-title-card" id="14">不如己者跟适合做朋友</div>
+					<div class="start-debate-title-card" id="15">人不轻狂亦少年</div>
+					<div class="start-debate-title-card" id="16">白一帆是不是辩论社的靓仔</div>
+					<div class="start-debate-title-card" id="17">人生贵在抒胸臆</div>
+					<div class="start-debate-title-card" id="18">平凡是弱者的借口</div>
+					<div class="start-debate-title-card" id="19">人工智能是否可取代法官审判</div>
+					<div class="start-debate-title-card" id="20">不如己者跟适合做朋友</div>
+					<div class="start-debate-title-card" id="21">人不轻狂亦少年</div>
+					<div class="start-debate-title-card" id="22">白一帆是不是辩论社的靓仔</div>
+					<div class="start-debate-title-card" id="23">人生贵在抒胸臆</div>
+					<div class="start-debate-title-card" id="24">平凡是弱者的借口</div>
+					<div class="start-debate-title-card" id="25">人工智能是否可取代法官审判</div>
+					<div class="start-debate-title-card" id="26">安乐死是否应该合法化</div>
+					<div class="start-debate-title-card" id="27">让,是不是一种美德</div>
+					<div class="start-debate-title-card" id="28">不如己者跟适合做朋友</div>
+					<div class="start-debate-title-card" id="29">人不轻狂亦少年</div>
+					<div class="start-debate-title-card" id="30">白一帆是不是辩论社的靓仔</div>
+					<div class="start-debate-title-card" id="31">人生贵在抒胸臆</div>
+					<div class="start-debate-title-card" id="32">人工智能是否可取代法官审判</div>
+					<div class="start-debate-title-card" id="33">安乐死是否应该合法化</div>
+					<div class="start-debate-title-card" id="34">学生近视防控应该家庭主导</div>
+					<div class="start-debate-title-card" id="35">让是不是一种美德</div>
+					<div class="start-debate-title-card" id="36">不如己者跟适合做朋友</div>
+					<div class="start-debate-title-card" id="37">人不轻狂亦少年</div>
+					<div class="start-debate-title-card" id="38">白一帆是不是辩论社的靓仔</div>
+					<div class="start-debate-title-card" id="39">人生贵在抒胸臆</div>
+					<div class="start-debate-title-card" id="40">人工智能是否可取代法官审判</div>
+					<div class="start-debate-title-card" id="41">安乐死是否应该合法化</div>
+					<div class="start-debate-title-card" id="42">学生近视防控应该家庭主导</div>
+					<div class="start-debate-title-card" id="43">让是不是一种美德</div>
+					<div class="start-debate-title-card" id="44">不如己者跟适合做朋友</div>
+					<div class="start-debate-title-card" id="45">让是不是一种美德</div>
+					<div class="start-debate-title-card" id="46">不如己者跟适合做朋友</div>
+					<div class="start-debate-title-card" id="47">人不轻狂亦少年</div>
+					<div class="start-debate-title-card" id="48">白一帆是不是辩论社的靓仔</div>
+					<div class="start-debate-title-card" id="49">人不轻狂亦少年</div>
+					<div class="start-debate-title-card" id="50">白一帆是不是辩论社的靓仔</div>
+					<div class="start-debate-title-card" id="51">人工智能是否可取代法官审判</div>
+					<div class="start-debate-title-card" id="52">安乐死是否应该合法化</div>
+					<div class="start-debate-title-card" id="53">让是不是一种美德</div>
+					<div class="start-debate-title-card" id="54">白一帆是不是辩论社的靓仔</div>
+					<div class="start-debate-title-card" id="55">人生贵在抒胸臆</div>
+					<div class="start-debate-title-card" id="56">人工智能是否可取代法官审判</div>
+					<div class="start-debate-title-card" id="57">安乐死是否应该合法化</div>
+					<div class="start-debate-title-card" id="58">学生近视防控应该家庭主导</div>
+					<div class="start-debate-title-card" id="59">让是不是一种美德</div>
+					<div class="start-debate-title-card" id="60">不如己者跟适合做朋友</div>
 					</div>
-					<div class="block-trans" id="block1">
-						<div class="card" id="card1" onclick="waves(1,event)"></div>
-						<div class="card-des">Project-Fade</div>
-						<div class="card-subdes">2017/10 minecraft</div>
+					<div class="start-main-title-card-box">
+						<div class="start-main-title-card">上&nbsp海&nbsp市&nbsp七&nbsp宝&nbsp中&nbsp学&nbsp华&nbsp语&nbsp辩&nbsp论&nbsp社</div>
+						<div class="start-secondary-title-card">以&nbsp辩&nbsp寻&nbsp明，向&nbsp默&nbsp而&nbsp生</div>
 					</div>
 				</div>
 			</div>
-			<div class="section" id="skill">
-				<h2 class="section-title">技能树|Skill</h2>
-				<div class="skill-box">
-					<div class="skill">Html</div>
-					<div class="skillbar"><div class="bar-left" id="htmlbar"></div></div>
-					<div class="skill">CSS</div>
-					<div class="skillbar"><div class="bar-left" id="cssbar"></div></div>
-					<div class="skill">JS</div>
-					<div class="skillbar"><div class="bar-left" id="jsbar"></div></div>
+			<div class="bright-width-limiter">
+				<div class="purpose">
+					<div class="section-title">「以&nbsp思&nbsp成&nbsp辩，以&nbsp夜&nbsp寻&nbsp明，向&nbsp默&nbsp而&nbsp言，向&nbsp死&nbsp而&nbsp生」 --辩论社社长</div>
+					<div class="purpose-card-box">
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp主新国辩赛制，旨在学习辩论技巧，开拓辩论思路，将华语辩论之风吹遍校园。这里有最优秀的学生教练，每周五的社团课程与在高一开设的辩论拓展课。这里有思路清奇知识渊博的社员，赛前思维碰撞的讨论之夜与我们执着追求的理想。政治，历史，文学，艺术，无所不包，无话不谈。</div>
+					</div>
 				</div>
 			</div>
-			<div class="section">
-					<h2 class="section-title">关于|About</h2>
-					<p class="section-text">联系方式:Round_Cookies@outlook.com</br>团队官网:Innovacreation.studio</p>
-					<p class="section-text">愿所有追逐梦想的人得到自己想要的东西.</p>
-					<i class="ion-ios-arrow-up" onclick="Pagemove(800)"></i>
+			<div class="bright-width-limiter">
+				<div class="introduction">
+					<div class="introduction-card-box">
+						<div class="introduction-card">
+							<div class="section-text">我们是七中辩论人才中的佼佼者</div>
+							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp是&nbsp谁?!</div>
+							<div class="section-text">我们是七宝中学的可爱学生w 还能是谁？OwO</div>
+						</div>
+						<div class="section-division-line-v"></div>
+						<div class="introduction-card">
+							<div class="section-text">我们是各辩论赛赛场上的掌控者</div>
+							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp做&nbsp什&nbsp么&nbsp吃&nbsp的?!</div>
+							<div class="section-text">我们打辩论！吃麻辣烫！吃小杨生煎！</div>
+						</div>
+						<div class="section-division-line-v"></div>
+						<div class="introduction-card">
+							<div class="section-text">我们是社会与逻辑问题的研讨者</div>
+							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp平&nbsp常&nbsp做&nbsp什&nbsp么?!</div>
+							<div class="section-text">我们玩狼人杀！交流学习经验！闲聊！</div>
+						</div>
+						<div class="section-division-line-v"></div>
+						<div class="introduction-card">
+							<div class="section-text">我们是思考及华语辩论的热爱者</div>
+							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp的&nbsp共&nbsp同&nbsp点&nbsp是?!</div>
+							<div class="section-text">我们都超级有爱！而且都是人！</div>
+						</div>
+						<div class="section-division-line-v"></div>
+						<div class="introduction-card">
+							<div class="section-text">我们要让七中辩论水平超越巅峰</div>
+							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp的&nbsp目&nbsp标&nbsp是?!</div>
+							<div class="section-text">我们要星辰大海！我们要最佳辩手！</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="end">
-				<h3 class="ending">Copyright © 2016-2017 Round Cookies</h3>
+			<div class="bright-width-limiter">
+				<div class="purpose">
+					<div class="section-title">「推&nbsp开&nbsp门&nbsp就&nbsp是&nbsp神&nbsp仙&nbsp打&nbsp架」 --辩论社某骨干社员</div>
+					<div class="purpose-card-box">
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作为七宝中学社团资源最丰富的社团，你们拥有全新的图文信息大楼的专属教室，尽享整个图书馆的资源，有丰富的辩题来不断引燃思想的火花，有知识渊博、逻辑严密的学长学姐来给你们展现全七宝中学最有趣的想法，带来一场场思维碰撞的盛宴。</div>
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp面向辩论队成员和其他想在辩论上更进一步的同学，由辩论队教练——2018年新国辩全球冠军队一辩黄世觉现场授课，深入介绍辩论比赛中的种种技术并提供专业指导。</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="start-show" id="start">
-			<h2 class="title">Round Cookies</h2>
-			<h2 class="subtitle">A double-end developer & designer</h2>
-			<div class="divider"></div>
-			<div class="iconbox">
-				<a><i class="ion-social-twitter"></i>
-				<a href="https://github.com/Round-Cookies"><i class="ion-social-github"></i></a>
-				<a><i class="ion-social-facebook"></i></a>
+			<div class="bright-width-limiter">
+				<div class="section-space-v"></div>
+				<div class="section-space-v"></div>
 			</div>
-			<i class="ion-ios-arrow-down" onclick="Pagemove(800)"></i>
-		</div>
+			<div class="dark-width-limiter">
+				<div class="section-space-v"></div>
+				<div class="section-space-v"></div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="purpose" id="purpose-dark">
+					<div class="section-title" id="section-title-dark">「我&nbsp可&nbsp是&nbsp专&nbsp门&nbsp为&nbsp了&nbsp大&nbsp场&nbsp面&nbsp而&nbsp生&nbsp的&nbsp人」 --辩论社学总</div>
+					<div class="purpose-card-box">
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp辩论作为一种竞技，最大的乐趣和动力都来自比赛，而七宝中学正提供了无数这样的比赛机会，只要你想，你就会成为辩论场上的明星。</div>
+						<div class="purpose-card">坐标魔都，2016年秋随七宝中学辩论队建立而成立的华语辩论社，在成立的短短两年间，社团便参加多项区级、市级辩论赛。</div>
+						<div class="section-space-v"></div>
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp下面是部分奖项与辩论赛介绍。</div>		
+					</div>
+				</div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="section-space-v"></div>
+				<div class="section-space-v"></div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="introduction">
+					<div class="section-division-line-h"></div>
+				</div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="section-space-v"></div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="exhibition">
+					<div class="exhibition-card-box">
+						<div class="exhibition-card" id="exhibition-card-left">
+							<div class="exhibition-card-picture-1"></div>
+							<div class="exhibition-card-title"><ion-icon name="pricetags"></ion-icon>上海市高中生法制辩论赛</div>
+							<div class="exhibition-card-text">七宝中学辩论队自建以来的传统比赛，对参赛辩手的法律素养有一定要求。</div>
+							<div class="exhibition-card-text-s"><ion-icon name="ribbon"></ion-icon>曾获冠/亚军</div>
+						</div>
+						<div class="exhibition-card" id="exhibition-card-right">
+							<div class="exhibition-card-picture-2"></div>
+							<div class="exhibition-card-title"><ion-icon name="pricetags"></ion-icon>闵行区辩论赛</div>
+							<div class="exhibition-card-text">一场给新人辩手缓冲期的比赛，你会在其中慢慢成长成为独当一面的辩手。</div>
+							<div class="exhibition-card-text-s"><ion-icon name="ribbon"></ion-icon>曾获冠/亚军</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="section-space-v"></div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="introduction">
+					<div class="section-division-line-h"></div>
+				</div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="section-space-v"></div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="purpose" id="purpose-dark">
+					<div class="section-title" id="section-title-dark">「不&nbsp要&nbsp紧&nbsp张，我&nbsp不&nbsp紧&nbsp张」 --紧张的不行的辩论社学总</div>
+					<div class="purpose-card-box">
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp辩论社的社员在赛场上锻炼口才，增大信心与表达能力，并且冲击更高的巅峰。</div>
+					</div>
+				</div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="section-space-v"></div>
+				<div class="section-space-v"></div>
+			</div>
+			<div class="bright-width-limiter">
+				<div class="section-space-v"></div>
+				<div class="section-space-v"></div>
+			</div>
+			<div class="bright-width-limiter">
+				<div class="purpose">
+					<div class="section-title">「我&nbsp饿&nbsp了」 --灵魂深处的热望社长</div>
+					<div class="purpose-card-box">
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp麻辣烫，海底捞。小杨生煎，寿司汤包。一点点，鹿角巷，雪碧阔落，卡布奇诺。</div>
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp只要你想，辩论准备室里可以美食与思绪齐飞，肥宅共快乐一色。</div>
+					</div>
+				</div>
+			</div>
+			<div class="bright-width-limiter">
+					<div class="section-space-v"></div>
+					<div class="section-space-v"></div>
+				</div>
+			<div class="bright-width-limiter">
+				<div class="introduction">
+					<div class="section-division-line-h" id="section-division-line-h-bright"></div>
+				</div>
+			</div>
+			<div class="bright-width-limiter">
+					<div class="section-space-v"></div>
+				</div>
+			<div class="bright-width-limiter">
+				<div class="exhibition">
+					<div class="exhibition-card-box">
+						<div class="exhibition-card-s" id="exhibition-card-s-left">
+							<div class="exhibition-card-s-picture-1"></div>
+							<div class="exhibition-card-text">辩论社の集体海底捞</div>
+						</div>
+						<div class="exhibition-card-s" id="exhibition-card-s-mid">
+							<div class="exhibition-card-s-picture-2"></div>
+							<div class="exhibition-card-text">辩论准备室的星冰乐</div>
+						</div>
+						<div class="exhibition-card-s" id="exhibition-card-s-right">
+							<div class="exhibition-card-s-picture-3"></div>
+							<div class="exhibition-card-text">香蕉w</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bright-width-limiter">
+				<div class="section-space-v"></div>
+				<div class="section-space-v"></div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="section-space-v"></div>
+				<div class="section-space-v"></div>
+			</div>
+			<div class="dark-width-limiter">
+				<div class="joinUs">
+					<div class="joinUs-section-title">加&nbsp入&nbsp我&nbsp们</div>
+					<div class="purpose-card-box">
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp收获极致快乐成为优秀本秀的三种方式:</div>
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspⅠ.通过参与暑期辩论营获得直升名额</div>
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspⅡ.在招新会上参加面试</div>
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspⅢ.在新生辩中表现出色</div>
+						<div class="section-space-v"></div>
+						<div class="purpose-card">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp详情可以进入招新群了解</div>
+					</div>
+				</div>
+			</div>
+			<div class="dark-width-limiter" id="end">
+				<div class="copyRight">
+					<div class="copyRight-section-text">Copyright ©2019 七&nbsp宝&nbsp中&nbsp学&nbsp华&nbsp语&nbsp辩&nbsp论&nbsp社&nbsp&nbsp&nbsp&nbsp版&nbsp权&nbsp所&nbsp有</div>
+				</div>
+			</div>
+		<script src="js/titleEffect.js"></script>
 		<div id="cover" class="cover" onclick="clearslide()"></div>
-	</body>
+		</div>
+    </body>
 </html>
