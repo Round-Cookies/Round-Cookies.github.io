@@ -12,17 +12,7 @@ function Pagemove(ID)
             actualTop += current.offsetTop;
             current = current.offsetParent;
         }
-
-        
         i = actualTop;
-
-        $or = false
-        $velocity = 1.5;//初速度，单位为像素/10毫秒
-        $af = 11.5;//加速度系数
-        navHeight = 60;//导航栏高度
-        /*↑可设置变量*/
-        i = i - navHeight;
-        $x=0;
         var y;
         if(window.pageYOffset)
         {
@@ -36,6 +26,16 @@ function Pagemove(ID)
         {
             y = document.body.scrollTop;    
         }
+
+
+        $or = false
+        $velocity = 1.5;//初速度，单位为像素/10毫秒
+        $af = Math.abs(i-y)/1080*10.5;//加速度系数
+        navHeight = 60;//导航栏高度
+        /*↑可设置变量*/
+        i = i - navHeight;
+        $x=0;
+
         $timer = setInterval(function(){
             var z;
             if(window.pageYOffset)

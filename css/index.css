@@ -771,6 +771,10 @@ h2
         padding-left: 36px;
         padding-right: 36px;
     }
+    .copyRight
+    {
+        height: 20vh;
+    }
     .start-main-title-card-box
     {
         top: 16%;
