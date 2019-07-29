@@ -1,18 +1,32 @@
 var $or = true;
-function Pagemove(i)
+
+function Pagemove(ID)
 {
     if($or == true)
     {
+        actualTop = document.getElementById(ID).offsetTop;
+        current = document.getElementById(ID).offsetParent;
+    
+        while (current !== null)
+        {
+            actualTop += current.offsetTop;
+            current = current.offsetParent;
+        }
+
+        
+        i = actualTop;
+
         $or = false
         $velocity = 1.5;//初速度，单位为像素/10毫秒
         $af = 11.5;//加速度系数
+        navHeight = 60;//导航栏高度
         /*↑可设置变量*/
-        i = i * document.body.clientHeight/1080;
+        i = i - navHeight;
         $x=0;
         var y;
         if(window.pageYOffset)
         {
-            y = window.pageYOffset;    
+            y = window.pageYOffset;
         } 
         else if(document.documentElement && document.documentElement.scrollTop) 
         {  

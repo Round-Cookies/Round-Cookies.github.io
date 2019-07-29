@@ -19,31 +19,31 @@
     <body>
 		<script src="js/moveEffect.js"></script>
 		<script src="js/navEffect.js"></script>
-		<script src="js/smoothscroll.js"></script>
         <div class="background" id="bg"></div>
         <div class="backgroundcover-hide" id="bgcover"></div>
-		<nav>
-			<div class="menu" onclick="slide()">
-				<div class="capsule"></div>
-				<div class="capsule"></div>
-				<div class="capsule"></div>
-			</div>
+		<nav class="nav-card-box">
 			<div class="nav-bright" id="nav">
 				<div class="nav-leftBlock">
 					<div class="nav-title" id="nav-title">上&nbsp海&nbsp市&nbsp七&nbsp宝&nbsp中&nbsp学&nbsp华&nbsp语&nbsp辩&nbsp论&nbsp社</div>
 				</div>
 				<div class="nav-rightBlock">
-					<li><a onclick="Pagemove(500)">&nbsp&nbsp社&nbsp团&nbsp介&nbsp绍&nbsp&nbsp</a></li>
-					<li><a onclick="Pagemove(1700)">&nbsp&nbsp社&nbsp团&nbsp展&nbsp示&nbsp&nbsp</a></li>
-					<li><a onclick="Pagemove(3200)">&nbsp&nbsp社&nbsp团&nbsp生&nbsp活&nbsp&nbsp</a></li>
-					<li><a onclick="Pagemove(4220)">&nbsp&nbsp加&nbsp入&nbsp我&nbsp们&nbsp&nbsp</a></li>
+					<li><a onclick="Pagemove('secFirst')">&nbsp&nbsp社&nbsp团&nbsp介&nbsp绍&nbsp&nbsp</a></li>
+					<li><a onclick="Pagemove('secSecond')">&nbsp&nbsp社&nbsp团&nbsp展&nbsp示&nbsp&nbsp</a></li>
+					<li><a onclick="Pagemove('secThird')">&nbsp&nbsp社&nbsp团&nbsp生&nbsp活&nbsp&nbsp</a></li>
+					<li><a onclick="Pagemove('secFourth')">&nbsp&nbsp加&nbsp入&nbsp我&nbsp们&nbsp&nbsp</a></li>
 				</div>
 			</div>
 			<div id="sidebar" class="side-bar-hide">
-				<li class="side-bar-content-li"><a onclick="Pagemove(500)" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp介&nbsp绍&nbsp&nbsp</a></li>
-				<li class="side-bar-content-li"><a onclick="Pagemove(1700)" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp展&nbsp示&nbsp&nbsp</a></li>
-				<li class="side-bar-content-li"><a onclick="Pagemove(3200)" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp生&nbsp活&nbsp&nbsp</a></li>
-				<li class="side-bar-content-li"><a onclick="Pagemove(4220)" class="side-bar-content-a">&nbsp&nbsp加&nbsp入&nbsp我&nbsp们&nbsp&nbsp</a></li>
+				<li class="side-bar-content-li"><a onclick="Pagemove('secFirst');clearslide()" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp介&nbsp绍&nbsp&nbsp</a></li>
+				<li class="side-bar-content-li"><a onclick="Pagemove('secSecond');clearslide()" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp展&nbsp示&nbsp&nbsp</a></li>
+				<li class="side-bar-content-li"><a onclick="Pagemove('secThird');clearslide()" class="side-bar-content-a">&nbsp&nbsp社&nbsp团&nbsp生&nbsp活&nbsp&nbsp</a></li>
+				<li class="side-bar-content-li"><a onclick="Pagemove('secFourth');clearslide()" class="side-bar-content-a">&nbsp&nbsp加&nbsp入&nbsp我&nbsp们&nbsp&nbsp</a></li>
+				<div class="menu" onclick="slide()">
+					<div class="mobile-nav">
+						<div class="mobile-nav-title">七&nbsp中&nbsp华&nbsp语&nbsp辩&nbsp论&nbsp社</div>
+						<ion-icon name="ios-reorder" class="menu-button"></ion-icon>
+					</div>
+				</div>
 			</div>
 		</nav>
 		<div class="main-content">
@@ -112,12 +112,13 @@
 					<div class="start-debate-title-card" id="60">不如己者跟适合做朋友</div>
 					</div>
 					<div class="start-main-title-card-box">
-						<div class="start-main-title-card">上&nbsp海&nbsp市&nbsp七&nbsp宝&nbsp中&nbsp学&nbsp华&nbsp语&nbsp辩&nbsp论&nbsp社</div>
+						<div class="start-main-title-card" id="desktop-start-main-title-card">上&nbsp海&nbsp市&nbsp七&nbsp宝&nbsp中&nbsp学&nbsp华&nbsp语&nbsp辩&nbsp论&nbsp社</div>
+						<div class="start-main-title-card" id="mobile-start-main-title-card">上&nbsp海&nbsp市&nbsp七&nbsp宝&nbsp中&nbsp学<br>华&nbsp语&nbsp辩&nbsp论&nbsp社</div>
 						<div class="start-secondary-title-card">以&nbsp辩&nbsp寻&nbsp明，向&nbsp默&nbsp而&nbsp生</div>
 					</div>
 				</div>
 			</div>
-			<div class="bright-width-limiter">
+			<div class="bright-width-limiter" id="secFirst">
 				<div class="purpose">
 					<div class="section-title">「以&nbsp思&nbsp成&nbsp辩，以&nbsp夜&nbsp寻&nbsp明，向&nbsp默&nbsp而&nbsp言，向&nbsp死&nbsp而&nbsp生」 --辩论社社长</div>
 					<div class="purpose-card-box">
@@ -129,33 +130,33 @@
 				<div class="introduction">
 					<div class="introduction-card-box">
 						<div class="introduction-card">
-							<div class="section-text">我们是七中辩论人才中的佼佼者</div>
-							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp是&nbsp谁?!</div>
-							<div class="section-text">我们是七宝中学的可爱学生w 还能是谁？OwO</div>
+							<div class="introduction-card-text">我们是七中辩论人才中的佼佼者</div>
+							<div class="introduction-card-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp是&nbsp谁?!</div>
+							<div class="introduction-card-text">我们是七宝中学的可爱学生w 还能是谁？OwO</div>
 						</div>
 						<div class="section-division-line-v"></div>
 						<div class="introduction-card">
-							<div class="section-text">我们是各辩论赛赛场上的掌控者</div>
-							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp做&nbsp什&nbsp么&nbsp吃&nbsp的?!</div>
-							<div class="section-text">我们打辩论！吃麻辣烫！吃小杨生煎！</div>
+							<div class="introduction-card-text">我们是各辩论赛赛场上的掌控者</div>
+							<div class="introduction-card-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp做&nbsp什&nbsp么&nbsp吃&nbsp的?!</div>
+							<div class="introduction-card-text">我们打辩论！吃麻辣烫！吃小杨生煎！</div>
 						</div>
 						<div class="section-division-line-v"></div>
 						<div class="introduction-card">
-							<div class="section-text">我们是社会与逻辑问题的研讨者</div>
-							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp平&nbsp常&nbsp做&nbsp什&nbsp么?!</div>
-							<div class="section-text">我们玩狼人杀！交流学习经验！闲聊！</div>
+							<div class="introduction-card-text">我们是社会与逻辑问题的研讨者</div>
+							<div class="introduction-card-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp平&nbsp常&nbsp做&nbsp什&nbsp么?!</div>
+							<div class="introduction-card-text">我们玩狼人杀！交流学习经验！闲聊！</div>
 						</div>
 						<div class="section-division-line-v"></div>
 						<div class="introduction-card">
-							<div class="section-text">我们是思考及华语辩论的热爱者</div>
-							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp的&nbsp共&nbsp同&nbsp点&nbsp是?!</div>
-							<div class="section-text">我们都超级有爱！而且都是人！</div>
+							<div class="introduction-card-text">我们是思考及华语辩论的热爱者</div>
+							<div class="introduction-card-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp的&nbsp共&nbsp同&nbsp点&nbsp是?!</div>
+							<div class="introduction-card-text">我们都超级有爱！而且都是人！</div>
 						</div>
 						<div class="section-division-line-v"></div>
 						<div class="introduction-card">
-							<div class="section-text">我们要让七中辩论水平超越巅峰</div>
-							<div class="secondary-section-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp的&nbsp目&nbsp标&nbsp是?!</div>
-							<div class="section-text">我们要星辰大海！我们要最佳辩手！</div>
+							<div class="introduction-card-text">我们要让七中辩论水平超越巅峰</div>
+							<div class="introduction-card-title"><ion-icon id="help-circle" name="help-circle"></ion-icon>我&nbsp们&nbsp的&nbsp目&nbsp标&nbsp是?!</div>
+							<div class="introduction-card-text">我们要星辰大海！我们要最佳辩手！</div>
 						</div>
 					</div>
 				</div>
@@ -177,7 +178,7 @@
 				<div class="section-space-v"></div>
 				<div class="section-space-v"></div>
 			</div>
-			<div class="dark-width-limiter">
+			<div class="dark-width-limiter" id="secSecond">
 				<div class="purpose" id="purpose-dark">
 					<div class="section-title" id="section-title-dark">「我&nbsp可&nbsp是&nbsp专&nbsp门&nbsp为&nbsp了&nbsp大&nbsp场&nbsp面&nbsp而&nbsp生&nbsp的&nbsp人」 --辩论社学总</div>
 					<div class="purpose-card-box">
@@ -245,7 +246,7 @@
 				<div class="section-space-v"></div>
 				<div class="section-space-v"></div>
 			</div>
-			<div class="bright-width-limiter">
+			<div class="bright-width-limiter" id="secThird">
 				<div class="purpose">
 					<div class="section-title">「我&nbsp饿&nbsp了」 --灵魂深处的热望社长</div>
 					<div class="purpose-card-box">
@@ -292,7 +293,7 @@
 				<div class="section-space-v"></div>
 				<div class="section-space-v"></div>
 			</div>
-			<div class="dark-width-limiter">
+			<div class="dark-width-limiter" id="secFourth">
 				<div class="joinUs">
 					<div class="joinUs-section-title">加&nbsp入&nbsp我&nbsp们</div>
 					<div class="purpose-card-box">

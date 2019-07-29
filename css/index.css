@@ -146,32 +146,6 @@ h2
     font-size: 2.5vh;
 }
 
-.secondary-section-title
-{
-    writing-mode: tb-rl;
-    animation: loading 0.7s ease-out;
-    -moz-animation: loading 0.7s ease-out;
-    -webkit-animation: loading 0.7s ease-out;
-    -o-animation: loading 0.7s ease-out;
-    font-family: 'Noto Sans SC','Raleway';
-    font-weight: 600;
-    text-align: center;
-    color: #222;
-    font-size: 4vh;
-    display: flex;
-    align-items: center;
-}
-
-.section-text
-{
-    writing-mode: tb-rl;
-    font-family: 'Noto Serif SC',serif,'Raleway';
-    font-weight: 500;
-    text-align: center;
-    color: #999;
-    font-size: 2vh;
-}
-
 .section-division-line-v
 {
     flex-grow: 0;
@@ -210,7 +184,6 @@ h2
 /*======================================================================================start======================================================================================*/
 .start
 {
-    z-index: 650;
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
@@ -238,6 +211,7 @@ h2
     align-items: center;
     justify-content: space-between;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .start-debate-title-card
@@ -251,6 +225,7 @@ h2
     width: 3vh;
     font-weight: 500;
     font-size: 2.5vh;
+    white-space:nowrap;
 }
 
 .start-main-title-card-box
@@ -320,11 +295,37 @@ h2
     justify-content: stretch;
 }
 
+.introduction-card-text
+{
+    writing-mode: tb-rl;
+    font-family: 'Noto Serif SC',serif,'Raleway';
+    font-weight: 500;
+    text-align: center;
+    color: #999;
+    font-size: 2vh;
+}
+
+.introduction-card-title
+{
+    writing-mode: tb-rl;
+    animation: loading 0.7s ease-out;
+    -moz-animation: loading 0.7s ease-out;
+    -webkit-animation: loading 0.7s ease-out;
+    -o-animation: loading 0.7s ease-out;
+    font-family: 'Noto Sans SC','Raleway';
+    font-weight: 600;
+    text-align: center;
+    color: #222;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+}
 /*======================================================================================purpose======================================================================================*/
 .purpose
 {
     z-index: 650;
     height: auto;
+    font-family: 'Noto Serif SC',serif,'Raleway';
     color: #444;
     padding-top: 5vh;
     padding-left: 48px;
@@ -335,15 +336,7 @@ h2
 
 #purpose-dark
 {
-    z-index: 650;
-    height: auto;
-    font-family: 'Noto Serif SC',serif,'Raleway';
     color: #eee;
-    padding-top: 5vh;
-    padding-left: 48px;
-    padding-right: 48px;
-    max-width: 1320px;
-    margin: 0 auto;
 }
 
 .purpose-card-box
@@ -514,7 +507,7 @@ h2
 }
 .copyRight
 {
-    height: 6vh;
+    height: 10vh;
     display: flex;
     align-items: center;
 }
@@ -547,11 +540,18 @@ h2
         margin-left: 1vh;
         margin-right: 0.1vh;
     }
-    
 }
 
 @media (min-width: 1024px)
 {
+    #desktop-start-main-title-card
+    {
+        display: block;
+    }
+    #mobile-start-main-title-card
+    {
+        display: none;
+    }
     #exhibition-card-left
     {
         border-right: 0px solid #333;
@@ -586,9 +586,69 @@ h2
 
 @media (max-width: 1024px)
 {
-    .introduction
+    #desktop-start-main-title-card
     {
         display: none;
+    }
+    #mobile-start-main-title-card
+    {
+        display: block;
+    }
+    .start-debate-title-card-box
+    {
+        padding-top: 0px
+    }
+    .introduction
+    {
+        z-index: 650;
+        height: auto;
+        font-family: 'Noto Serif SC',serif,'Raleway';
+        margin: 0 auto;
+    }
+    
+    .introduction-card
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        overflow-x: hidden;
+        flex-grow: 1;
+        padding: 3vh 0vh;
+        align-items: center;
+    }
+    
+    .introduction-card-box
+    {
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column;
+    }
+    
+    .introduction-card-text
+    {
+        writing-mode: horizontal-tb;
+        font-family: 'Noto Serif SC',serif,'Raleway';
+        font-weight: 500;
+        text-align: center;
+        color: #999;
+        font-size: 2vh;
+    }
+    
+    .introduction-card-title
+    {
+        order: -1;
+        writing-mode: horizontal-tb;
+        animation: loading 0.7s ease-out;
+        -moz-animation: loading 0.7s ease-out;
+        -webkit-animation: loading 0.7s ease-out;
+        -o-animation: loading 0.7s ease-out;
+        font-family: 'Noto Sans SC','Raleway';
+        font-weight: 600;
+        text-align: center;
+        color: #222;
+        font-size: 4vh;
+        display: flex;
+        align-items: center;
     }
     .bright-width-limiter
     {
@@ -665,26 +725,58 @@ h2
 
     .section-title
     {
-        font-size: 3.5vh;
+        font-size: 2.5vh;
+        padding: 1vh 0vh;
     }
 
     .purpose-card
     {
         font-size: 2vh;
     }
-}
-
-@media (max-width: 768px)
-{
-    .main-title
+    .start
+    {
+        padding-left: 36px;
+        padding-right: 36px;
+        height: 25vh;
+    }
+    .introduction
+    {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .purpose
+    {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .exhibition
+    {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .joinUs
+    {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .start-main-title-card-box
+    {
+        top: 15%;
+    }
+    .start-main-title-card
     {
         animation: loading 0.7s ease-out;
         -moz-animation: loading 0.7s ease-out;
         -webkit-animation: loading 0.7s ease-out;
         -o-animation: loading 0.7s ease-out;
         font-family: 'Noto Serif SC',serif,'Raleway';
-        font-weight: 100;
+        font-weight: 300;
         color: #222;
         font-size: 4vh;
+    }
+    #start
+    {
+        margin-bottom: -5px;
+        margin-top: 60vh;
     }
 }

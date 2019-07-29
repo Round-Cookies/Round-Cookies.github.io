@@ -1,4 +1,26 @@
-/*电脑版上方导航栏*/
+.nav-card-box
+{
+  top:0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+.mobile-nav
+{
+  color: #222;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.mobile-nav-title
+{
+  padding-left: 36px;
+  font-size: 2.3em;
+}
 .nav-bright
 {
   color: #222;
@@ -69,38 +91,18 @@
   height: 26px;
   font-size: 18px;
 }
-.capsule 
+.menu-button
 {
-  z-index: 1200;
-  margin-top: 10px;
-  border: 0 solid transparent;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  width: 35px;
-  height: 3px;
-  background: #222;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 36px;
+  font-size: 6vh;
 }
 .menu 
 {
   display: none;
   z-index: 1000;
-  float: right;
-  position: fixed;
-  right: 1rem;
   transition: 0.4s;
-  margin: 1.1em 1.1rem;
-}
-.menu:active 
-{
-  display: none;
-  z-index: 1000;
-  float: right;
-  opacity: 0.5;
-  position: fixed;
-  right: 1rem;
-  transition: 0.4s;
-  margin: 2rem 2rem;
 }
 .side-bar-show 
 {
@@ -108,12 +110,12 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: space-evenly;
-  z-index: 1400;
+  z-index: 1000;
   transition: transform 0.4s ease-in-out;
   transform: translate(0, 0);
   position: fixed;
-  width: 60%;
-  height: 100%;
+  width: 100%;
+  height: 30vh;
   background-color: #222;
 }
 .side-bar-hide 
@@ -122,12 +124,12 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: space-evenly;
-  z-index: 1400;
+  z-index: 1000;
   transition: transform 0.4s ease-in-out;
-  transform: translate(-140%, 0);
+  transform: translate(0, -30.1vh);
   position: fixed;
-  width: 60%;
-  height: 100%;
+  width: 100%;
+  height: 30vh;
   background-color: #222;
 }
 .side-bar-content-li
@@ -143,7 +145,7 @@
   font-weight: 200;
   text-align: center;
   color: #eee;
-  font-size: 4em;
+  font-size: 3em;
 }
 .cover 
 {
@@ -173,7 +175,10 @@
 {
     .menu
     {
-        display:block;
+      display: block;
+      position: absolute;
+      top: 30vh;
+      width: 100%;
     }
     .menu:active
     {
