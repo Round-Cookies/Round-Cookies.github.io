@@ -164,6 +164,13 @@ h2
     max-width: 1320px;
 }
 
+#mobile-section-division-line-h
+{
+    display: none;
+    height: 11px;
+    background-color: #999;
+}
+
 #section-division-line-h-bright
 {
     background-color: #ccc;
@@ -586,6 +593,11 @@ h2
 
 @media (max-width: 1024px)
 {
+    #mobile-section-division-line-h
+    {
+        display: block;
+        height: 11px;
+    }
     #desktop-start-main-title-card
     {
         display: none;
@@ -761,7 +773,7 @@ h2
     }
     .start-main-title-card-box
     {
-        top: 15%;
+        top: 16%;
     }
     .start-main-title-card
     {
