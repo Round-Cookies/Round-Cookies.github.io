@@ -110,22 +110,18 @@ h2
 
 .bright-width-limiter
 {
-    transition: 0.4s;
+    transition: 2s;
     background-color: #fff;
 }
 
 .dark-width-limiter
 {
-    transition: 0.4s;
+    transition: 2s;
     background-color: #222;
 }
 
 .section-title
 {
-    animation: loading 0.7s ease-out;
-    -moz-animation: loading 0.7s ease-out;
-    -webkit-animation: loading 0.7s ease-out;
-    -o-animation: loading 0.7s ease-out;
     font-family: 'Noto Serif SC',serif,'Raleway';
     font-weight: 100;
     color: #777;
@@ -136,10 +132,6 @@ h2
 
 #section-title-dark
 {
-    animation: loading 0.7s ease-out;
-    -moz-animation: loading 0.7s ease-out;
-    -webkit-animation: loading 0.7s ease-out;
-    -o-animation: loading 0.7s ease-out;
     font-family: 'Noto Serif SC',serif,'Raleway';
     font-weight: 100;
     color: #bbb;
