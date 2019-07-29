@@ -223,7 +223,7 @@ h2
     -o-animation: loading 0.7s ease-out;
     font-family: 'Noto Serif SC', serif,'Raleway';
     width: 3vh;
-    font-weight: 500;
+    font-weight: 200;
     font-size: 2.5vh;
     white-space:nowrap;
 }

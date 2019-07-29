@@ -1,7 +1,7 @@
 var i = 1;
 while(i<61)
 {
-    var num = Math.floor((Math.random()*10)-1)+5;
+    var num = Math.floor((Math.random()*5)-1)+11;
     if(num==10)
     {
         num='a';
@@ -22,7 +22,7 @@ while(i<61)
     {
         num='e';
     }
-    document.getElementById(i).setAttribute("style","color: #e"+num+"e"+num+"e"+num+"");
+    document.getElementById(i).setAttribute("style","color: #f"+num+"f"+num+"f"+num+"");
     i++;
 }
 
