@@ -60,7 +60,6 @@
 }
 .nav-rightBlock
 {
-  width: 40vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,6 +70,7 @@
 }
 #nav a 
 {
+  margin-left: 10px;
   color: #aaa;
   height: 22px;
   vertical-align: auto;
