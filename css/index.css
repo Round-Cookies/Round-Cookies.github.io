@@ -112,12 +112,14 @@ h2
 {
     transition: 2s;
     background-color: #fff;
+    margin-bottom: -3px;
 }
 
 .dark-width-limiter
 {
     transition: 2s;
     background-color: #222;
+    margin-bottom: -3px;
 }
 
 .section-title
